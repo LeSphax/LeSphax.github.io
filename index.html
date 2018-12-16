@@ -86,20 +86,6 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-4 portfolio-item">
-					<a href="#Gym" class="portfolio-link" data-toggle="modal" data-target="#modalGym">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<img src="images/Github.png" width="50" height="50">
-							</div>
-						</div>
-						<img src="images/Breakout.png" class="img-responsive">
-					</a>
-					<div style="text-align: center;">
-						<h4>OpenAI Gym</h4>
-						<p class="text-muted">Implementation of the PPO algorithm to solve openAI gym environments</p>
-					</div>
-				</div>
-				<div class="col-sm-4 portfolio-item">
 						<a href="#MLAgents" class="portfolio-link" data-toggle="modal" data-target="#modalMLAgents">
 							<div class="portfolio-hover">
 								<div class="portfolio-hover-content">
@@ -111,6 +97,20 @@
 						<div style="text-align: center;">
 							<h4>Unity ML Agents</h4>
 							<p class="text-muted">Training AIs to play Slideball</p>
+						</div>
+					</div>
+					<div class="col-sm-4 portfolio-item">
+						<a href="#Gym" class="portfolio-link" data-toggle="modal" data-target="#modalGym">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<img src="images/Github.png" width="50" height="50">
+								</div>
+							</div>
+							<img src="images/Breakout.png" class="img-responsive">
+						</a>
+						<div style="text-align: center;">
+							<h4>OpenAI Gym</h4>
+							<p class="text-muted">Implementation of the PPO algorithm to solve openAI gym environments</p>
 						</div>
 					</div>
 			</div>
@@ -185,13 +185,9 @@
 						<br>
 						<p><strong>Technologies</strong> : Python, Tensorflow</p>
 	
-						<p>I started getting really interested in reinforcement learning in January 2018 when I discovered Unity MLAgents framework. 
-							I had fiddled a bit with tensorflow before but being able to use ML on video games made it really appealing.</p>
-
-						<p>But after trying out MLAgents, I realized that to use it
-							 effectively I would need to first understand actor critic algorithms and particularly ppo.</p>
+						<p>This was a fun one week project to get a better understanding of the PPO algorithm</p>
 	
-						<p>So using as a reference the <a href="https://arxiv.org/abs/1707.06347">ppo paper</a>, <a href="https://www.youtube.com/watch?v=2pWv7GOvuf0">David Silver's course on RL</a>
+						<p>Using as a reference the <a href="https://arxiv.org/abs/1707.06347">ppo paper</a>, <a href="https://www.youtube.com/watch?v=2pWv7GOvuf0">David Silver's course on RL</a>
 							and <a href="https://github.com/openai/baselines">openAI baselines</a> I reimplemented the ppo algorithm 
 							and tested it on two gym environments: CartPole and Atari Breakout.
 						</p>
@@ -200,8 +196,6 @@
 						<p>Afterwards, I also added curiosity based rewards based on 
 							<a href=" https://pathak22.github.io/noreward-rl/">this work</a> and tested it 
 							on an environment where an agent must click buttons appearing at random positions</p>
-
-						<p>Check it out on <a href="https://github.com/LeSphax/ppo">Github</a></p>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -226,19 +220,13 @@
 						<img src="images/Slideball 1v1.png" style="display: block; margin-left: auto;
 								margin-right: auto;" class="img-responsive">
 						<br>
-						<p><strong>Technologies</strong> : Python, Tensorflow, Unity</p>
-	
-						<p>Now that I am familiar with reinforcement learning and the ppo algorithm 
-							I am using the Unity ML agents framework again.</p>
+						<p><strong>Technologies</strong> : Python, Tensorflow, Unity ML agents</p>
 
-						<p>The objective is to teach agents to play my game Slideball. First I want to see how far 
-							I can get using the algorithms built in MLAgents (ppo with curiosity, curriculum learning and behavioral cloning).
-							In the future, I might also use this framework to implement and test other algorithms.</p>
+						<p>The objective of this project was to teach agents to play my game Slideball.</p>
 
-						<p>At the moment (December 2018), I have successfully taught my agents to pick up a ball and throw it into goals placed at random positions.
-							I am working on the next steps which is to make them play against each other. 
-							For that, I am adding new features to the framework to allow agents to play againt past versions of themselves. 
-							As well as an elo rating system to be able to measure the progression of the agents skill level.
+						<p>I got the agents to pick up a ball and throw it into goals placed at random positions.
+							And later started to make them play against each other. 
+							For that I had to add new features to the ML Agents framework to allow agents to play againt past versions of themselves and an elo rating system to be able to measure the progression of the agents skill level.
 						</p>
 
 						<p>
@@ -275,24 +263,16 @@
 						At the moment there are only puzzles and no real structure to navigate them.
 					</p>
 					<p>
-						The original idea for the 2D game mechanics came from a friend, he also created the 3D models. Other than that, I
-						built everything in this demo.ø
-					</p>
-					<p>
-						Implementing the undo feature while having animations between the different board states was quite challenging
-						and I had to build a complex hierarchy of objects and events.
-						Another challenge was to switch between the 2D and 3D modes.<br>
-						It was also my first real try at level design.
-					</p>
-					<p>
-						I stopped working on it in September 2016 and decided to focus on SlideBall instead.
+						Implementing the undo feature while having animations between the different board states was an interesting problem.
+						That was one of my first projects and I was excited to use all the C# features I learned about.
+						So event-based architecture makes things way more complicated than they should be :P
 					</p>
 					</p>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 					<a href="https://github.com/LeSphax/PerspectiveShift" target="_blank" class="btn btn-default">
-						<img src="images/Github.png" width="20" height="20">
+						<img src="images/Github black.png" width="20" height="20">
 						&nbsp;
 						Github
 					</a>
@@ -318,28 +298,17 @@
 					<img src="images/SlideBall.png" style="display: block; margin-left: auto;
 						margin-right: auto;" class="img-responsive">
 					<br>
-					<p style="text-align: center; font-style: italic">This game is multiplayer, it is better to play with friends but
-						if you are alone you can play it on two windows (just opening two tabs won't work) to have both client and host
-						perspective.<br>
-						I can also play with you, just come here <a href="https://discord.gg/vGgahKD">https://discord.gg/vGgahKD</a> and
-						PM me :p
-					</p>
+					<p style="text-align: center; font-style: italic">This game is multiplayer, it is better to play with friends.</p>
 					<br>
 					<p><strong>Technologies</strong> : Unity with C#</p>
 					<p><strong>Tools</strong> : GIMP, Blender, Maya, Audacity</p>
 
 					<p>
-						I really liked the mod <a href="https://www.youtube.com/watch?v=Det8nDV2q9c">Hover</a> on Starcraft II and I am
-						trying to create a similar game by myself.
+						I really liked the mod <a href="https://www.youtube.com/watch?v=Det8nDV2q9c">Hover</a> on Starcraft II and built a browser version to learn about networking in games.
 					</p>
 					<p>
-						For the networking side, I started to use Photon Unity Network but I then switched to WebRTC to get a better
-						latency. This means I had to recreate several functionnalities like RPCs and distributing packets to the
-						different entities and I am hosting my own signaling server that handles the rooms creation.
-					</p>
-					<p>
-						This is the game I am currently working on (May 2017). The technical side starts to work reliably well when
-						playing with 8 people so I am starting to experiment more with the gameplay.
+						It uses WebRTC to play peer to peer with friends and can be pretty fun to play 2v2 or 3v3.
+						After discovering Reinforcement Learning in 2018 I started modifying it to teach agents to play the game
 					</p>
 				</div>
 				<div class="modal-footer">
@@ -372,7 +341,7 @@
 					</p>
 
 					<p>
-						Working with 3 other students, I made a game to teach aeronautics to children from 6 to 10 years old and produced
+						Working with 3 other students, we made a game to teach aeronautics to children from 6 to 10 years old and produced
 						a small paper containing recommandation for creating educational entertainment.
 					</p>
 					<p>
@@ -380,14 +349,13 @@
 						and half of the game UI and navigation. I ported the game from android to WebGL.
 					</p>
 					<p>
-						Designing, developing and testing the game took about 100 hours of work from each of us. I also organised and
-						conducted user tests with primary school children.
+						I also organised and conducted user tests with primary school children.
 					</p>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 					<a href="https://github.com/LeSphax/FlyHigher" target="_blank" class="btn btn-default">
-						<img src="images/Github.png" width="20" height="20">
+						<img src="images/Github black.png" width="20" height="20">
 						&nbsp;
 						Github
 					</a>
@@ -409,26 +377,20 @@
 			<div name="about" class="row about about-row home-about-bg image-bg" style="margin-top:30px" id="about">
 				<div class="hidden-xs col-sm-6 col-md-6 col-lg-6 vcenter about-image animated hide-it">
 					<div class="about-img-container">
-						<img class="about-img img-circle img-responsive shadowed" src="images/Photo Sebastien.jpg">
+						<img class="about-img img-circle img-responsive shadowed" src="images/Photo Seb.jpg">
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 vcenter shadowed about-container about-info gradient-white-bg animated hide-it">
-					<img class="hidden-sm hidden-md hidden-lg img-circle shadowed about-img-small" src="images/Photo Sebastien.jpg">
+					<img class="hidden-sm hidden-md hidden-lg img-circle shadowed about-img-small" src="images/Photo Seb.jpg">
 					<div class="col-md-11">
 						<h2>About me</h2>
 						<hr />
 						<p>Hello !</p>
 						<p>
-							My name is Sébastien Kerbrat, I am a french software developper living in Skövde, Sweden.
+							My name is Sébastien Kerbrat, I am a jack of all trades software developper living in San Francisco.
 						</p>
 						<p>
-							I like try to improve myself everyday and learn new things about the world. 
-						</p>
-						<p>
-							In my free time, I like playing and building video games as well as training neural networks to play them.
-						</p>
-						<p>
-							I am looking for a job where I will find interesting challenges, passionate people and meaningful projects.
+							When I'm not fiddling with my latest software project you will find me chasing the wind to practice new kitesurfing tricks. 
 						</p>
 						<p>
 							Maybe we can work together \o/
